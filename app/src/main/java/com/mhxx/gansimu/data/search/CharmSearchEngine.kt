@@ -187,8 +187,8 @@ class CharmSearchEngine {
                                     continue
                                 }
 
-                                val rf1 = remainShortage.entries.getOrNull(0)
-                                val rf2 = remainShortage.entries.getOrNull(1)
+                                val rf1 = remainShortage.entries.toList().getOrNull(0)
+                                val rf2 = remainShortage.entries.toList().getOrNull(1)
 
                                 if (rf1 == null) continue
                                 val needed1 = rf1.value
