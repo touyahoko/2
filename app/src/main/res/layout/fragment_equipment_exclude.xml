@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg_dark" android:padding="8dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="【除外装備設定】" android:textColor="@color/accent_color"
+        android:textSize="16sp" android:textStyle="bold" android:paddingBottom="8dp"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="検索から除外する防具を設定します。長押しで削除。"
+        android:textColor="@color/white" android:textSize="12sp" android:paddingBottom="8dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginBottom="4dp">
+        <Spinner android:id="@+id/spinnerExcludeSlot" android:layout_width="80dp"
+            android:layout_height="40dp" android:background="@color/input_bg"
+            android:popupBackground="@color/panel_bg" android:layout_marginEnd="4dp"/>
+        <Spinner android:id="@+id/spinnerExcludeEquip" android:layout_width="0dp"
+            android:layout_height="40dp" android:layout_weight="1"
+            android:background="@color/input_bg" android:popupBackground="@color/panel_bg"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginBottom="8dp">
+        <Button android:id="@+id/btnAddExclude" android:layout_width="0dp"
+            android:layout_height="40dp" android:layout_weight="1" android:text="除外追加"
+            android:textColor="@color/white" android:backgroundTint="@color/btn_add"
+            android:textSize="12sp" android:layout_marginEnd="4dp"/>
+        <Button android:id="@+id/btnClearExclude" android:layout_width="0dp"
+            android:layout_height="40dp" android:layout_weight="1" android:text="全解除"
+            android:textColor="@color/white" android:backgroundTint="@color/btn_clear"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/tvExcludeCount" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textColor="@color/label_color"
+        android:textSize="11sp" android:paddingBottom="4dp"/>
+    <ListView android:id="@+id/listExcluded" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1"
+        android:background="@color/panel_bg" android:divider="@color/divider_color"
+        android:dividerHeight="1dp"/>
+</LinearLayout>

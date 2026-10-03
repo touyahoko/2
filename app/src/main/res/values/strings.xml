@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">頑シミュ MHXX</string>
+
+    <!-- タブ -->
+    <string name="tab_simulator">シミュレータ</string>
+    <string name="tab_exclude_equip">除外装備設定</string>
+    <string name="tab_fix_equip">固定装備設定</string>
+    <string name="tab_exclude_deco">装飾品除外設定</string>
+    <string name="tab_charm_settings">お守り設定</string>
+    <string name="tab_myset">マイセット</string>
+
+    <!-- 検索 -->
+    <string name="searching">検索中...</string>
+    <string name="result_count">%1$d 件見つかりました</string>
+    <string name="no_results">条件に合う組み合わせが見つかりませんでした</string>
+    <string name="desired_skills_label">欲しいスキル: </string>
+
+    <!-- 護石 -->
+    <string name="charm_search_title">要求護石検索</string>
+    <string name="charm_search_result_title">要求護石検索結果</string>
+    <string name="charm_saved">護石設定を保存しました</string>
+    <string name="charm_cleared">護石設定をクリアしました</string>
+
+    <!-- 設定 -->
+    <string name="excluded_count">除外中: %1$d 件</string>
+    <string name="excluded_cleared">除外リストをクリアしました</string>
+    <string name="fixed_saved">固定装備を保存しました</string>
+    <string name="fixed_cleared">固定装備をクリアしました</string>
+    <string name="deco_excluded_cleared">装飾品除外リストをクリアしました</string>
+
+    <!-- マイセット -->
+    <string name="myset_count">保存済み: %1$d 件</string>
+
+    <!-- 詳細 -->
+    <string name="result_detail_title">結果詳細</string>
+
+    <!-- メニュー -->
+    <string name="menu_charm_search">要求護石検索</string>
+    <string name="menu_myset">マイセット</string>
+</resources>

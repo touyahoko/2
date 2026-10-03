@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark">
+
+    <!-- 剣士/ガンナー選択 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="@color/header_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="武器種:"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="4dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupWeaponType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBoth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="両方"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:checked="true"
+                android:buttonTint="@color/accent_color"/>
+
+            <RadioButton
+                android:id="@+id/radioSwordman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剣士"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:buttonTint="@color/accent_color"/>
+
+            <RadioButton
+                android:id="@+id/radioGunner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ガンナー"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:buttonTint="@color/accent_color"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  性別:"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBothGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="両"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:checked="true"
+                android:buttonTint="@color/accent_color"/>
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男性"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:buttonTint="@color/accent_color"/>
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女性"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:buttonTint="@color/accent_color"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- スキル選択エリア -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="@color/panel_bg">
+
+        <Spinner
+            android:id="@+id/spinnerSkillSelect"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:background="@color/input_bg"
+            android:textColor="@color/white"
+            android:popupBackground="@color/panel_bg"/>
+
+        <Button
+            android:id="@+id/btnAddSkill"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="追加"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:backgroundTint="@color/btn_add"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_marginStart="4dp"/>
+    </LinearLayout>
+
+    <!-- 選択されたスキルチップ -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/chip_bg">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/skillChipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"/>
+    </ScrollView>
+
+    <!-- 検索ボタン -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="@color/panel_bg">
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:text="検索"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:backgroundTint="@color/btn_search"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnCharmSearch"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:text="要求護石検索"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:backgroundTint="@color/btn_charm"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="クリア"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:backgroundTint="@color/btn_clear"/>
+    </LinearLayout>
+
+    <!-- 結果件数 + プログレス -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:background="@color/result_header_bg">
+
+        <TextView
+            android:id="@+id/tvResultCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:gravity="center_vertical"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:visibility="gone"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/accent_color"/>
+    </LinearLayout>
+
+    <!-- 結果リスト -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerResults"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"/>
+
+</LinearLayout>

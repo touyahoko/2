@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 頑シミュ アイコン (シールドモチーフ) -->
+    <path
+        android:fillColor="#58a6ff"
+        android:pathData="M54,18 L78,28 L78,52 C78,66 68,76 54,82 C40,76 30,66 30,52 L30,28 Z"/>
+    <path
+        android:fillColor="#1f6feb"
+        android:pathData="M54,24 L74,33 L74,52 C74,64 65,73 54,78 C43,73 34,64 34,52 L34,33 Z"/>
+    <path
+        android:fillColor="#58a6ff"
+        android:pathData="M46,50 L52,56 L64,44"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+</vector>

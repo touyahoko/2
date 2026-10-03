@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <!-- 防具5部位 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:text="頭"
+            android:textColor="@color/label_color"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tvHead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:text="胴"
+            android:textColor="@color/label_color"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tvBody"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:text="腕"
+            android:textColor="@color/label_color"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tvArm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:text="腰"
+            android:textColor="@color/label_color"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tvWst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:text="脚"
+            android:textColor="@color/label_color"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tvLeg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <!-- 護石 + 装飾品 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:text="護石"
+            android:textColor="@color/charm_color"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tvCharm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/charm_color"
+            android:textSize="11sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDecos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/deco_color"
+        android:textSize="10sp"
+        android:paddingStart="28dp"/>
+
+    <!-- 確率 -->
+    <TextView
+        android:id="@+id/tvProbability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/prob_color"
+        android:textSize="10sp"
+        android:paddingStart="28dp"/>
+
+    <!-- 発動スキル -->
+    <TextView
+        android:id="@+id/tvActiveSkills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/skill_color"
+        android:textSize="10sp"
+        android:paddingStart="28dp"/>
+
+    <!-- 区切り線 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"
+        android:layout_marginTop="4dp"/>
+
+</LinearLayout>

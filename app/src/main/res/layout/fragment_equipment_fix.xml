@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="8dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="【固定装備設定】" android:textColor="@color/accent_color"
+            android:textSize="16sp" android:textStyle="bold" android:paddingBottom="8dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="必ず使用する防具を固定できます。" android:textColor="@color/white"
+            android:textSize="12sp" android:paddingBottom="12dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="頭" android:textColor="@color/label_color" android:textSize="12sp"/>
+        <Spinner android:id="@+id/spinnerFixHead" android:layout_width="match_parent" android:layout_height="40dp" android:background="@color/input_bg" android:popupBackground="@color/panel_bg" android:layout_marginBottom="6dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="胴" android:textColor="@color/label_color" android:textSize="12sp"/>
+        <Spinner android:id="@+id/spinnerFixBody" android:layout_width="match_parent" android:layout_height="40dp" android:background="@color/input_bg" android:popupBackground="@color/panel_bg" android:layout_marginBottom="6dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="腕" android:textColor="@color/label_color" android:textSize="12sp"/>
+        <Spinner android:id="@+id/spinnerFixArm" android:layout_width="match_parent" android:layout_height="40dp" android:background="@color/input_bg" android:popupBackground="@color/panel_bg" android:layout_marginBottom="6dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="腰" android:textColor="@color/label_color" android:textSize="12sp"/>
+        <Spinner android:id="@+id/spinnerFixWst" android:layout_width="match_parent" android:layout_height="40dp" android:background="@color/input_bg" android:popupBackground="@color/panel_bg" android:layout_marginBottom="6dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="脚" android:textColor="@color/label_color" android:textSize="12sp"/>
+        <Spinner android:id="@+id/spinnerFixLeg" android:layout_width="match_parent" android:layout_height="40dp" android:background="@color/input_bg" android:popupBackground="@color/panel_bg" android:layout_marginBottom="12dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/btnSaveFix" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="保存" android:textColor="@color/white" android:backgroundTint="@color/btn_search" android:layout_marginEnd="8dp"/>
+            <Button android:id="@+id/btnClearFix" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1" android:text="全解除" android:textColor="@color/white" android:backgroundTint="@color/btn_clear"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
